@@ -3,11 +3,11 @@
 //
 
 #include "AdventFive.h"
-#include "../../../../CLionProjects/AdventOfCode/Utils/StringUtils.h"
+#include "../../StringUtils.h"
 
 std::string AdventFive::parse(const std::vector<std::string> &data) {
     std::string all;
-    for (const std::string &line : data) {
+    for (const std::string &line: data) {
         all += line + '\n';
     }
     std::pair<std::string, std::string> stacks_and_moves = StringUtils::split_string(all, "move");
@@ -28,7 +28,7 @@ std::string AdventFive::parse(const std::vector<std::string> &data) {
 
     doMoves(reversed, moves);
     std::string result;
-    for (std::stack<char> stack : reversed) {
+    for (std::stack<char> stack: reversed) {
         char c = stack.top();
         result += c;
     }
@@ -50,7 +50,7 @@ std::vector<std::stack<char>> AdventFive::parse_stacks(const std::string &stacks
         char c = stacks_as_string.at(i);
         if (c == '[') {
             int pos = count / 3;
-            auto c = stacks_as_string[i + 1];
+            c = stacks_as_string[i + 1];
             if (row == 0 && pos > 4) {
                 --pos;
             }
