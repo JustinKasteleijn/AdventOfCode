@@ -1,0 +1,20 @@
+# ninja log v5
+2	241	7060418535266586	build.ninja	497997298790ce2a
+5	652	7060416845681780	CMakeFiles/AdventOfCode.dir/C++/main.cpp.obj	7ac7a52c4acd0c8a
+29	855	7060417543171409	CMakeFiles/AdventOfCode.dir/C++/2015/Day3/DayThree.cpp.obj	4dc2d0c506be0a79
+1128	1863	7060417553291426	CMakeFiles/AdventOfCode.dir/C++/2022/Day6/AdventSix.cpp.obj	c94b422dc7d730ff
+1	735	7060416846521754	CMakeFiles/AdventOfCode.dir/C++/File.cpp.obj	36906ca78f5ac569
+4	542	7060417540051410	CMakeFiles/AdventOfCode.dir/C++/2015/Day1/DayOne.cpp.obj	797a6c994e62a32a
+15	776	7060417542341541	CMakeFiles/AdventOfCode.dir/C++/2015/Day4/DayFour.cpp.obj	4c80c0337103d89f
+10	971	7060417544311403	CMakeFiles/AdventOfCode.dir/C++/2015/Day2/DayTwo.cpp.obj	c85263d1dbe82942
+23	1127	7060417545891398	CMakeFiles/AdventOfCode.dir/C++/2015/Day5/DayFive.cpp.obj	85c98d45f7b466f5
+35	1239	7060417547031404	CMakeFiles/AdventOfCode.dir/C++/2015/Day6/DaySix.cpp.obj	51ec2906e6af8ef2
+543	1402	7060417548501418	CMakeFiles/AdventOfCode.dir/C++/2022/Day1/AdventOne.cpp.obj	333acb9d33d32ad4
+777	1620	7060417550841421	CMakeFiles/AdventOfCode.dir/C++/2022/Day2/AdventTwo.cpp.obj	4d908af303badeea
+1240	1971	7060417554381403	CMakeFiles/AdventOfCode.dir/C++/2022/Day4/AdventFour.cpp.obj	5ae70c2e9399ff22
+972	2107	7060417555741387	CMakeFiles/AdventOfCode.dir/C++/2022/Day5/AdventFive.cpp.obj	e19cfc00f77e4bb8
+856	2320	7060417557871379	CMakeFiles/AdventOfCode.dir/C++/2022/Day3/AdventThree.cpp.obj	a930f47f35d281fa
+6	422	7060417724018484	CMakeFiles/AdventOfCode.dir/C++/2022/Day7/AdventSeven.cpp.obj	9635d2d2d51d6a3d
+6	882	7060417907485948	CMakeFiles/AdventOfCode.dir/C++/2015/Day4/lib/md5.cpp.obj	9261c17a4ac7b9db
+8	417	7060418553743676	CMakeFiles/AdventOfCode.dir/C++/StringUtils.cpp.obj	4076f1f16a168b7
+418	992	7060418559433670	AdventOfCode.exe	98a05714610929ff

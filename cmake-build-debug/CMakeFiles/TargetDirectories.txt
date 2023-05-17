@@ -1,0 +1,3 @@
+C:/Users/justi/AdventOfCode/cmake-build-debug/CMakeFiles/AdventOfCode.dir
+C:/Users/justi/AdventOfCode/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/justi/AdventOfCode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
