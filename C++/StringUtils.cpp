@@ -3,12 +3,11 @@
 //
 
 #include <vector>
-#include <iostream>
 #include "StringUtils.h"
 
 std::pair<std::string, std::string>
 StringUtils::split_string(const std::string &to_split, const std::string &delimiter) {
-    int n = to_split.find(delimiter);
+    std::size_t n = to_split.find(delimiter);
     return {to_split.substr(0, n), to_split.substr(n, to_split.length() - 1)};
 }
 
@@ -22,5 +21,5 @@ std::vector<std::string> StringUtils::split_string(std::string s, char delimiter
         s.erase(0, pos + 1);
     }
     result.push_back(s);
-    return result;
+    return std::move(result);
 }
