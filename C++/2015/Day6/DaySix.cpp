@@ -53,11 +53,11 @@ namespace AdventOfCode {
 
         std::unique_ptr<std::unique_ptr<int[]>[]> grid = std::make_unique<std::unique_ptr<int[]>[]>(1000);
 
+        std::fill(grid.get(), grid.get() + 1000, nullptr);
+
         for (int i = 0; i < 1000; ++i) {
             grid[i] = std::make_unique<int[]>(1000);
-            for (int j = 0; j < 1000; ++j) {
-                grid[i][j] = 0;
-            }
+            std::fill(grid[i].get(), grid[i].get() + 1000, 0);
         }
 
         unsigned long total = 0;
