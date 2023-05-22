@@ -15,6 +15,8 @@ namespace AdventOfCode {
     public:
         static uint16_t parse(const std::vector<std::string> &data);
 
+        static uint16_t parse2(const std::vector<std::string> &data);
+
     private:
         using Wires = std::map<std::string, uint16_t>;
 
@@ -23,6 +25,7 @@ namespace AdventOfCode {
         inline static bool is_digit(const std::string &digit);
 
         static std::unordered_map<std::string, std::function<uint16_t(uint16_t, uint16_t)>> operations;
+
     };
 } // AdventOfCode
 

@@ -36,8 +36,47 @@ namespace AdventOfCode {
             }
             instruction_queue.pop();
         }
-        for (const auto &[wire, value]: wires) {
-            std::cout << wire << ":   " << value << '\n';
+        return wires.at("a");
+    }
+
+    uint16_t DaySeven::parse2(const std::vector<std::string> &data) {
+        Wires wires;
+        std::queue<std::string> instruction_queue;
+        for (const std::string &line: data) {
+            instruction_queue.emplace(line);
+        }
+        while (wires.find("a") == wires.end()) {
+            auto [lhs, rhs] = StringUtils::split_string(instruction_queue.front(), "-> ");
+            std::string output = std::move(rhs);
+
+            std::vector<std::string> tokens = StringUtils::split_string(lhs, ' ');
+            uint16_t result = parse_instruction(tokens, wires);
+            if (result != 6444 && wires.find(output) == wires.end()) {
+                wires.insert({output, result});
+            } else {
+                instruction_queue.emplace(instruction_queue.front());
+            }
+            instruction_queue.pop();
+        }
+        uint16_t temp = wires.at("a");
+        wires.clear();
+        wires.insert({"b", temp});
+        instruction_queue = {};
+        for (const std::string &line: data) {
+            instruction_queue.emplace(line);
+        }
+        while (wires.find("a") == wires.end()) {
+            auto [lhs, rhs] = StringUtils::split_string(instruction_queue.front(), "-> ");
+            std::string output = std::move(rhs);
+
+            std::vector<std::string> tokens = StringUtils::split_string(lhs, ' ');
+            uint16_t result = parse_instruction(tokens, wires);
+            if (result != 6444 && wires.find(output) == wires.end()) {
+                wires.insert({output, result});
+            } else {
+                instruction_queue.emplace(instruction_queue.front());
+            }
+            instruction_queue.pop();
         }
         return wires.at("a");
     }
