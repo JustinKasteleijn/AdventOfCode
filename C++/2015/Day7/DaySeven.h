@@ -18,11 +18,9 @@ namespace AdventOfCode {
     private:
         using Wires = std::map<std::string, uint16_t>;
 
-        static int16_t parse_instruction(const std::vector<std::string> &tokens, Wires& wires);
+        static uint16_t parse_instruction(const std::vector<std::string> &tokens, Wires &wires);
 
         inline static bool is_digit(const std::string &digit);
-
-        inline static uint16_t to_uint16t(const std::string &digit);
 
         static std::unordered_map<std::string, std::function<uint16_t(uint16_t, uint16_t)>> operations;
     };
