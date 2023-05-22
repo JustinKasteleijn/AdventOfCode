@@ -1,41 +1,31 @@
 //
-// Created by justi on 5/17/2023.
+// Created by justi on 5/20/2023.
 //
 
 #ifndef ADVENTOFCODE_DAYSEVEN_H
 #define ADVENTOFCODE_DAYSEVEN_H
 
-#include <string>
+#include <map>
+#include <unordered_map>
+#include <functional>
 #include <vector>
 
 namespace AdventOfCode {
-    enum Command {
-        WRITE,
-        AND,
-        OR,
-        LSHIFT,
-        RSHIFT,
-        NOT
-    };
-
-    struct Address {
-        std::string name = {"NULL"};
-        uint16_t value = 0;
-    };
-
-    struct Action {
-        Command command;
-        Address from_address_x;
-        Address from_address_y;
-        Address to_address;
-    };
-
     class DaySeven {
     public:
-        static std::vector<Action> parse(const std::vector<std::string> &data);
-        static int solve(const std::vector<Action>& assembly);
-    };
-}
+        static uint16_t parse(const std::vector<std::string> &data);
 
+    private:
+        using Wires = std::map<std::string, uint16_t>;
+
+        static int16_t parse_instruction(const std::vector<std::string> &tokens, Wires& wires);
+
+        inline static bool is_digit(const std::string &digit);
+
+        inline static uint16_t to_uint16t(const std::string &digit);
+
+        static std::unordered_map<std::string, std::function<uint16_t(uint16_t, uint16_t)>> operations;
+    };
+} // AdventOfCode
 
 #endif //ADVENTOFCODE_DAYSEVEN_H

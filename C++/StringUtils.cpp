@@ -8,7 +8,7 @@
 std::pair<std::string, std::string>
 StringUtils::split_string(const std::string &to_split, const std::string &delimiter) {
     std::size_t n = to_split.find(delimiter);
-    return {to_split.substr(0, n), to_split.substr(n, to_split.length() - 1)};
+    return {to_split.substr(0, n), to_split.substr((n + delimiter.size()), to_split.length() - 1)};
 }
 
 std::vector<std::string> StringUtils::split_string(std::string s, char delimiter) {
