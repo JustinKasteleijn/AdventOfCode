@@ -21,7 +21,7 @@ namespace AdventOfCode {
         std::size_t i = 0;
         while (i < line.length()) {
             char currentCharacter = (line[i]);
-            if (currentCharacter == '\\' && i < strLen - 1) {
+            if (currentCharacter == '\\' && i < line.length() - 1) {
                 if ((line[i + 1]) == '\\' || (line[i + 1]) == '\"') {
                     i += 2;
                 } else if ((line[i + 1]) == 'x') {
