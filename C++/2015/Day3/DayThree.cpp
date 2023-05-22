@@ -31,6 +31,6 @@ namespace AdventOfCode {
             order == 1 ? s.insert(santa) : s.insert(robot);
             order == 1 ? order = 0 : order = 1;
         }
-        return s.size();
+        return static_cast<int>(s.size());
     }
 } // AdventOfCode

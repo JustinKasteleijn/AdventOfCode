@@ -60,14 +60,12 @@ namespace AdventOfCode {
             while (*line) {
                 first_pair = &pairs[*(line - 1) - 'a'][*line - 'a'];
 
-                /* It contains a pair of any two letters that appears at least twice in the string without overlapping */
                 if (*first_pair == -1) {
                     *first_pair = i;
                 } else if (*first_pair != -1 && *first_pair < (i - 1)) {
                     pattern_2 = 1;
                 }
 
-                /* It contains at least one letter which repeats with exactly one letter between them */
                 if (i >= 2 && *(line - 2) == *line) {
                     pattern_1 = 1;
                 }
