@@ -19,7 +19,8 @@ namespace AdventOfCode {
         }
 
         std::vector<std::string> cities(distances.size());
-        std::transform(distances.begin(), distances.end(), cities.begin(), [](auto p) { return p.first; });
+        std::transform(distances.begin(), distances.end(), cities.begin(),
+                       [](const std::pair<const std::string, std::map<std::string, int>> &p) { return p.first; });
 
         int min_distance = INT_MAX;
         do {
