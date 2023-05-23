@@ -187,6 +187,12 @@ build CMakeFiles/AdventOfCode.dir/C++/2015/Day12/DayTwelve.cpp.obj: CXX_COMPILER
   OBJECT_DIR = CMakeFiles\AdventOfCode.dir
   OBJECT_FILE_DIR = CMakeFiles\AdventOfCode.dir\C++\2015\Day12
 
+build CMakeFiles/AdventOfCode.dir/C++/2015/Day13/DayThirteen.cpp.obj: CXX_COMPILER__AdventOfCode_Debug C$:/Users/justi/AdventOfCode/C++/2015/Day13/DayThirteen.cpp || cmake_object_order_depends_target_AdventOfCode
+  DEP_FILE = CMakeFiles\AdventOfCode.dir\C++\2015\Day13\DayThirteen.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  OBJECT_DIR = CMakeFiles\AdventOfCode.dir
+  OBJECT_FILE_DIR = CMakeFiles\AdventOfCode.dir\C++\2015\Day13
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target AdventOfCode
@@ -195,7 +201,7 @@ build CMakeFiles/AdventOfCode.dir/C++/2015/Day12/DayTwelve.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable AdventOfCode.exe
 
-build AdventOfCode.exe: CXX_EXECUTABLE_LINKER__AdventOfCode_Debug CMakeFiles/AdventOfCode.dir/C++/main.cpp.obj CMakeFiles/AdventOfCode.dir/C++/File.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day1/DayOne.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day2/DayTwo.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day3/DayThree.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day4/DayFour.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day5/DayFive.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day6/DaySix.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day1/AdventOne.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day2/AdventTwo.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day3/AdventThree.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day4/AdventFour.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day5/AdventFive.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day6/AdventSix.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day7/AdventSeven.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day4/lib/md5.cpp.obj CMakeFiles/AdventOfCode.dir/C++/StringUtils.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day7/DaySeven.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day8/DayEight.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day9/DayNine.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day10/DayTen.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day11/DayEleven.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day12/DayTwelve.cpp.obj
+build AdventOfCode.exe: CXX_EXECUTABLE_LINKER__AdventOfCode_Debug CMakeFiles/AdventOfCode.dir/C++/main.cpp.obj CMakeFiles/AdventOfCode.dir/C++/File.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day1/DayOne.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day2/DayTwo.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day3/DayThree.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day4/DayFour.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day5/DayFive.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day6/DaySix.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day1/AdventOne.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day2/AdventTwo.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day3/AdventThree.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day4/AdventFour.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day5/AdventFive.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day6/AdventSix.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2022/Day7/AdventSeven.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day4/lib/md5.cpp.obj CMakeFiles/AdventOfCode.dir/C++/StringUtils.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day7/DaySeven.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day8/DayEight.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day9/DayNine.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day10/DayTen.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day11/DayEleven.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day12/DayTwelve.cpp.obj CMakeFiles/AdventOfCode.dir/C++/2015/Day13/DayThirteen.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\AdventOfCode.dir

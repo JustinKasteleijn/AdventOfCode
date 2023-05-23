@@ -3,10 +3,10 @@
 //
 #include <iostream>
 #include "File.h"
-#include "2015/Day12/DayTwelve.h"
+#include "2015/Day13/DayThirteen.h"
 
 int main() {
-    auto file = AdventOfCode::File("C:/Users/justi/AdventOfCode/C++/2015/Day12/test.txt");
-    std::cout << AdventOfCode::DayTwelve::parse2(file.to_vector(7500)) << std::endl;
+    auto file = AdventOfCode::File("C:/Users/justi/AdventOfCode/C++/2015/Day13/test.txt");
+    std::cout << AdventOfCode::DayThirteen::parse(file.to_vector(50), true) << std::endl;
     return 0;
 }

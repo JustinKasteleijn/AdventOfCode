@@ -3,6 +3,7 @@
 //
 
 #include <regex>
+#include <iostream>
 #include "DayNine.h"
 #include "../../StringUtils.h"
 
@@ -23,8 +24,10 @@ namespace AdventOfCode {
         int min_distance = INT_MAX;
         do {
             int curr_dist = 0;
-            for (auto it = cities.begin(); it != (cities.end() - 1); ++it)
+            for (auto it = cities.begin(); it != (cities.end() - 1); ++it) {
                 curr_dist += distances[*it][*(it + 1)];
+            }
+            std::cout << std::endl;
 
             min_distance = std::min(curr_dist, min_distance);
         } while (std::next_permutation(cities.begin(), cities.end()));
@@ -43,14 +46,14 @@ namespace AdventOfCode {
         std::vector<std::string> cities(distances.size());
         std::transform(distances.begin(), distances.end(), cities.begin(), [](auto p) { return p.first; });
 
-        int min_distance = INT_MIN;
+        int max_distance = INT_MIN;
         do {
             int curr_dist = 0;
             for (auto it = cities.begin(); it != (cities.end() - 1); ++it)
                 curr_dist += distances[*it][*(it + 1)];
 
-            min_distance = std::max(curr_dist, min_distance);
+            max_distance = std::max(curr_dist, max_distance);
         } while (std::next_permutation(cities.begin(), cities.end()));
-        return min_distance;
+        return max_distance;
     }
 } // AdventOfCode
