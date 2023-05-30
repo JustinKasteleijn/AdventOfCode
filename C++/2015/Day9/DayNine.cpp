@@ -20,7 +20,7 @@ namespace AdventOfCode {
 
         std::vector<std::string> cities(distances.size());
         std::transform(distances.begin(), distances.end(), cities.begin(),
-                       [](const std::pair<const std::string, std::map<std::string, int>> &r ip) { return p.first; });
+                       [](const std::pair<const std::string, std::map<std::string, int>> &p) { return p.first; });
 
         int min_distance = INT_MAX;
         do {
@@ -28,7 +28,6 @@ namespace AdventOfCode {
             for (auto it = cities.begin(); it != (cities.end() - 1); ++it) {
                 curr_dist += distances[*it][*(it + 1)];
             }
-            std::cout << std::endl;
 
             min_distance = std::min(curr_dist, min_distance);
         } while (std::next_permutation(cities.begin(), cities.end()));

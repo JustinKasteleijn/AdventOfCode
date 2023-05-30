@@ -3,7 +3,6 @@
 //
 
 #include <algorithm>
-#include <iostream>
 #include <regex>
 #include "DayThirteen.h"
 #include "../../StringUtils.h"

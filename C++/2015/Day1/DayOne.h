@@ -12,6 +12,7 @@ namespace AdventOfCode {
     class DayOne {
     public:
         static int solve(const std::string& data);
+        static int solve2(const std::string& data);
     };
 
 } // AdventOfCode
