@@ -2,6 +2,7 @@
 // Created by justi on 5/15/2023.
 //
 
+#include <numeric>
 #include "DayOne.h"
 
 namespace AdventOfCode {
@@ -18,20 +19,8 @@ namespace AdventOfCode {
     }
 
     int DayOne::solve2(const std::string &data) {
-        int floor = 0;
-        int c = 0;
-        for (const char &ch: data) {
-            ++c;
-            if (ch == '(') {
-                ++floor;
-            } else {
-                --floor;
-            }
-
-            if (floor == -1) {
-                return c;
-            }
-        }
-        return floor;
+        return std::accumulate(data.begin(), data.end(), 0, [](int currentFloor, char c) {
+            return currentFloor + (c == '(' ? 1 : 0);
+        });
     }
 } // AdventOfCode
