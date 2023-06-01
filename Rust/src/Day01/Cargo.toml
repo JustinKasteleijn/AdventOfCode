@@ -1,9 +1,0 @@
-[package]
-name = "Day01"
-version = "0.1.0"
-authors = ["Justin Kasteleijn"]
-edition = "2021"
-
-[[bin]]
-name = "Day01"
-path = "main.rs"
