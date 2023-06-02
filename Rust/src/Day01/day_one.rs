@@ -24,13 +24,14 @@ pub fn solve_two(contents: Vec<String>) -> Result<i32, ParseIntError> {
     let mut seen_sums: HashSet<i32> = HashSet::new();
     let mut sum = 0;
 
-    for number in &numbers {
-        seen_sums.insert(sum);
-        sum += number;
+    loop {
+        for number in &numbers {
+            seen_sums.insert(sum);
+            sum += number;
 
-        if seen_sums.contains(&sum) {
-            return Ok(sum);
+            if seen_sums.contains(&sum) {
+                return Ok(sum);
+            }
         }
     }
-    return Ok(sum)
 }
