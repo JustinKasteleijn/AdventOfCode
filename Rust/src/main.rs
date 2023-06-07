@@ -5,20 +5,20 @@ mod utils {
 }
 
 mod twenty_eighteen {
-    pub mod day03 {
-        pub mod day_three;
+    pub mod day04 {
+        pub mod day_four;
     }
 }
 
 use utils::file::read_file_as_vector;
-use crate::twenty_eighteen::day03::day_three::solve;
+use crate::twenty_eighteen::day04::day_four::solve;
 
 fn main() {
-    let file_path = "C:/Users/justi/AdventOfCode/rust/src/twenty_eighteen/day02/input.txt";
+    let file_path = "C:/Users/justi/AdventOfCode/rust/src/twenty_eighteen/day04/input.txt";
 
     if let Ok(contents) = read_file_as_vector(file_path) {
         match solve(&contents) {
-            Ok(checksum) => println!("{}", checksum),
+            Ok(val) => println!("{:?}", val),
             Err(err) => println!("Oops something went wrong {:?}", err)
         }
     } else {

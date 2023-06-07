@@ -9,3 +9,5 @@ edition = "2021"
 [dependencies]
 lazy_static = "1.4"
 regex = "1.5"
+chrono = "0.4.23"
+nom = "7.1.3"
